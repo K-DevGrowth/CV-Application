@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+input {
+    display: block;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) 1fr;
+}
+
+.dashboard {
+    padding: 20px;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+}
+
+.dashboard input {
+    width: 100%;
+    padding: 2px 5px;
+}
+
+.dashboard .btn:not(.smGrey):hover {
+    opacity: 0.8;
+}
+
+.resume {
+    padding: 20px;
+}
+
+.resume p {
+    padding-left: 10px;
+}
+
+.resume div {
+    margin: 0 0 10px;
+}
+
+.btn {
+    margin: 10px 0 0;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4891ff;
+    font-weight: 600;
+    transition: 0.5s ease-out;
+}
+
+.btn:not(.smGrey) {
+    width: 100%;
+}
+
+.smGrey {
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 5px;
+}
+
+form {
+    animation: slide-in 1000ms;
+    height: 100%;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
