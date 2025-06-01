@@ -6,7 +6,7 @@
 body {
     font-family: sans-serif;
     line-height: 1.5;
-    font-size: calc(0.75rem + 1.5vw);
+    font-size: calc(0.75rem + 1vw);
 }
 
 button,
